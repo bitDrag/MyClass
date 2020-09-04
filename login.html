@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>MyClass</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+        body {
+            margin: 0px;
+            overflow: hidden;
+
+        }
+
+        h1::before {
+            content: "";
+            background: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 722px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: brightness(50%);
+            opacity: 0.60;
+            z-index: -1;
+        }
+
+
+        h1 {
+
+            font-family: 'Kaushan Script', cursive;
+            text-align: center;
+            color: white;
+            padding: 15px;
+            margin: 0px;
+            font-size: 60px;
+        }
+
+        #h21 {
+            font-family: 'Indie Flower', cursive;
+            display: inline-block;
+            position: absolute;
+            color: white;
+            margin-top: 130px;
+            margin-left: 150px;
+
+        }
+
+        h2 {
+
+            font-size: 50px;
+        }
+
+        p {
+            margin-top: 0px;
+            font-size: 20px;
+        }
+
+        #form {
+
+            position: relative;
+            border-radius: 7px;
+            background: #FFFFFF;
+            max-width: 360px;
+
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+
+        #box {
+            display: inline-block;
+            text-align: center;
+            margin-left: 950px;
+            margin-top: 100px;
+
+        }
+
+        .uname {
+            font-family: "Roboto", sans-serif;
+            margin: 20px 10px;
+            padding: 15px 50px;
+            border: none;
+            background-color: rgb(235, 227, 227);
+        }
+
+        .button {
+            font-family: "Roboto", sans-serif;
+            background-color: white;
+            border: 2px solid green;
+            border-radius: 5px;
+            color: rgb(8, 8, 8);
+            font-size: 20px;
+            margin-top: 30px;
+            padding: 10px 65px;
+        }
+
+        .button:hover {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        footer {
+            position: absolute;
+            background: #222;
+            color: #999;
+            margin-left: 0px;
+            margin-top: 127px;
+
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="new">
+        <h1>MyClass</h1>
+    </div>
+
+    <!-- form -->
+    <div id="h21">
+        <h2>Study made Easy</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quam <br> dolorem sit a consequuntur cumque,
+            nihil corrupti ea perspiciatis nisi?</p>
+    </div>
+    <div id="box">
+        <form id="form">
+            <input type="text" class="uname" name="uname" placeholder="UserName"><br>
+            <input type="text" class="uname" name="pass" placeholder="Password"><br>
+            <input type="submit" value="LOGIN" class="button" onclick="check(this.form)">
+        </form>
+    </div>
+    <footer>Copyright 2020~ MyClass - All Rights Reserved. Privacy Policy | Site Terms & Disclosures</footer>
+
+    <script>
+        function check(form) {
+            if (form.uname.value == "w" && form.pass.value == "s") {
+                window.open('test.html');
+            }
+            else {
+                alert("Error Password or Username");
+            }
+        }
+    </script>
+</body>
+
+</html>
