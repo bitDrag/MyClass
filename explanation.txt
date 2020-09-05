@@ -1,0 +1,29 @@
+--->unzip the online class folder.
+
+--->We will start the website by opening MyClass.html file and click on
+'May I come in' button to open login page.
+
+--->After logging in using '1822' as username and password click on login.
+
+---> In next page you can see the join now button as well as games,music feature option.
+
+--->Open server.js file.
+
+--->It will be better if you install node module packages locally.
+1) peer by npm i -g peer
+2) ejs by npm i ejs
+3) socket.io by npm i socket.io
+4) uuid by npm i uuid
+5) express by npm i express
+6) nodemon by npm i --save-dev nodemon
+
+--->To start live class session first start the server at port 3000 "npm run devStart" with server.js file
+packages are included already.On a different terminal run 'peerjs --port 3001' after installing peer module globally
+and then go to browser and run the server page.You can see a live video now copy the URL and paste it
+after clicking join button on test2.html page with title 'MyClass'.
+
+
+
+
+--->This is not a complete version of what we were delivering but we were more focused on mental
+stress issue and ease of usage for students and teachers of all age groups after completion of project.
